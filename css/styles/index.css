@@ -1,0 +1,17 @@
+/* =========================
+  SLOGAN
+========================= */
+
+#Title-Slogan {
+    font-family: var(--Font-title);
+    font-size: clamp(4rem, 10vw, 6rem);
+    color:transparent;
+    -webkit-text-stroke: 1px  var(--Contrast);
+    margin: 0 3%;
+}
+#Slogan {
+    font-family: var(--Font-Text);
+    font-size: 1.2rem;
+    color: var(--Contrast);
+    margin: 0 3%;
+}   

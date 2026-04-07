@@ -1,0 +1,11 @@
+.bg {
+    background: radial-gradient(
+        circle at 98% 20%,
+        #1f1f1f 0%,
+        #121212 50%,
+        #000000 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
