@@ -1,0 +1,80 @@
+/* Declarações referentes aos Containers */
+
+.container-cta{
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-artigos{
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;/* centraliza sem quebrar */
+    flex-shrink: 0;
+}
+
+/* Cards em Geral */
+
+.card{
+    background-color:var(--background-card);
+    color:var(--contrast);
+    font-size: clamp(1rem , 1.5vw, 1.5rem) ;
+    padding: 14px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 
+        transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+        background-color 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-5px);
+    background-color: var(--background-card-hover);
+}
+
+/* Cards de CTA */
+@media screen and (min-width:769px) {
+    .cta-card{
+    width: 100%;
+    max-width: 280px;
+    margin:20px;
+}
+}
+@media screen and (max-width: 769px) {
+    .cta-card{
+      width: 100%;
+      max-width: 200px;
+      margin:20px;
+} 
+}
+
+/* Artigos em Destaque */
+
+.art-destaque{
+    border: 1px var(--contrast) solid;
+    box-shadow: 1px 1px 5px var(--contrast);
+    transition: 
+        transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+        background-color 0.3s ease;
+}
+.art-destaque:hover{
+    box-shadow: 1px 1px 11px var(--contrast-two);
+}
+
+/* Title das seções de cards de Artigos */
+.sec-artigos h2{
+    font-family: var(--font-title);
+    padding: 12px;
+    color:var(--contrast);
+    text-align: center;
+}
+
+/* Descrição de artigos */
+
+.container-artigos > p{
+    max-width: 400px;
+}
+

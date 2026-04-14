@@ -3,15 +3,15 @@
 ========================= */
 
 #Title-Slogan {
-    font-family: var(--Font-title);
+    font-family: var(--font-title);
     font-size: clamp(4rem, 10vw, 6rem);
     color:transparent;
-    -webkit-text-stroke: 1px  var(--Contrast);
+    -webkit-text-stroke: 1px  var(--contrast);
     margin: 0 3%;
 }
 #Slogan {
-    font-family: var(--Font-Text);
+    font-family: var(--font-text);
     font-size: 1.2rem;
-    color: var(--Contrast);
+    color: var(--contrast);
     margin: 0 3%;
 }   

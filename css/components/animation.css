@@ -1,0 +1,71 @@
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*
+ Title: Fade In
+ Status: Finalizado
+ Features:
+    - Transição de opacidade de 0 para 1
+ Reasoning:
+    - Usado para suavizar a entrada de elementos na tela, melhorando a experiência visual e reduzindo mudanças bruscas de interface.
+*/
+
+@keyframes expand {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/*
+ Title: Expand
+ Status: Finalizado
+ Features:
+    - Aumenta levemente o tamanho do elemento (scale 1 → 1.05)
+ Reasoning:
+    - Usado para criar efeito de destaque em interações como hover, chamando atenção do usuário sem exagero.
+*/
+
+@keyframes less {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/*
+ Title: Shrink (Less)
+ Status: Finalizado
+ Features:
+    - Retorna o elemento do estado ampliado para o tamanho normal
+ Reasoning:
+    - Complementa o efeito expand, garantindo uma transição suave de volta ao estado original.
+*/
+
+@keyframes color {
+    from {
+        color: var(--Contrast-two);
+    }
+    to {
+        color: var(--Contrast);
+    }
+}
+
+/*
+ Title: Color Transition
+ Status: Finalizado
+ Features:
+    - Transição suave entre duas variáveis de cor
+ Reasoning:
+    - Melhora a fluidez visual em mudanças de estado (hover, foco ou destaque), mantendo consistência de tema.
+*/

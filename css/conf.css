@@ -1,62 +1,68 @@
 @charset "UTF-8";
 
-/* Title: Import Fonts
+/* =========================
+   🔤 Import Fonts
    Status: Finalizado
-   Features: 
+   Features:
     - Importação de fontes do Google Fonts
-    Reasoning: 
+   Reasoning:
     - As fontes importadas são essenciais para a identidade visual do site, proporcionando uma estética única e alinhada com o tema de entretenimento.
- */
- 
+========================= */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Rubik+Glitch&family=Syne:wght@400..800&display=swap');
 
-/* Title: Root and Reset
+/* =========================
+   🔄 Root Reset + Base Setup
    Status: Finalizado
-   Features: 
+   Features:
     - Reset de margens e padding
-    - Definição de variáveis CSS para cores e fontes
-   Reasoning: 
-    - O reset é essencial para garantir consistência entre navegadores.
-    - As variáveis CSS facilitam a manutenção e a aplicação de temas. 
-*/
+    - Definição de box-sizing global
+   Reasoning:
+    - Garante consistência entre navegadores e evita bugs de layout.
+========================= */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================
+   🎨 Root Variables
+   Status: Finalizado
+   Features:
+    - Definição de variáveis globais de cores e fontes
+   Reasoning:
+    - Facilita manutenção e permite consistência visual e troca rápida de tema.
+========================= */
 :root {
+
     /*
-    COLORS:
-        #373539
-        #F6DA9D
-        #AD0013
-        #A67D43
-        #121312
-        #FFFBF4
+     🎨 Color Palette Reference (base)
+     #373539
+     #F6DA9D
+     #AD0013
+     #A67D43
+     #121312
+     #FFFBF4
     */
-    /*
-     Title: Base Colors
-     Status: Finalizado
-     Features:
-        - Definição de variáveis CSS para cores de fundo, texto e contraste
-     Reasoning:
-        - Facilita a manutenção e a aplicação de temas, permitindo mudanças rápidas e consistentes em todo o site.    
-    */
-    --Background: #000000;
-    --Background-Blend: #1f1f1fe3;
-    --Text: #FFFBF4;
-    /*Contrast and Accent Colors*/
-    --Accent: #121312;
-    --Contrast: #F6DA9D;/*2ecc71 pensar depois*/
-    --Contrast-two: #E3C565;
-    --Constrast-Accent: #c7b07f;
-    --CTA: #861321;
-    --CTAHover: #ac1a2b;
-    /*Typography*/
-    --Font-Text : 'Montserrat', sans-serif; 
-    --Font-title: 'Syne', sans-serif;
-    --Font-Display: 'Rubik Glitch', cursive;
+
+    --background-card: #121212;
+    --background-card-hover: #1f1f1fe3;
+    --text: #FFFBF4;
+
+    /* =========================
+       🎯 Accent & Contrast Colors
+    ========================= */
+    --accent: #121312;
+    --contrast: #F6DA9D; /* 2ecc71 pensar depois */
+    --contrast-two: #E3C565;
+    --constrast-Accent: #c7b07f;
+    --cta: #861321;
+    --cta-hover: #ac1a2b;
+
+    /* =========================
+       🔤 Typography
+    ========================= */
+    --font-text: 'Montserrat', sans-serif;
+    --font-title: 'Syne', sans-serif;
+    --font-Display: 'Rubik Glitch', cursive;
 }
-
-
