@@ -52,3 +52,10 @@ Status: Finalizado
  Reasoning:
     - Aumenta taxa de clicks e diminue o Bounce Rate
 */
+
+
+#Saiba-Mais {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
